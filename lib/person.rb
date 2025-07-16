@@ -26,4 +26,12 @@ class Person
   def hygiene=(num)
     @hygiene = check_number(num) 
   end
+
+  def happy? 
+    self.happiness > 7 
+  end
+
+  def clean? 
+    self.hygiene > 7 
+  end
 end
