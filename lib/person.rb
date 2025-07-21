@@ -21,12 +21,12 @@ class Person
   end
 
   def hygiene=(hygiene)
-     if hygiene  > 10
-       @hygiene  = 10
-     elsif hygiene  < 0
-      @hygiene  = 0
+     if hygiene > 10
+       @hygiene = 10
+     elsif hygiene < 0
+      @hygiene = 0
      else
-      @hygiene  = hygiene 
+      @hygiene = hygiene 
      end
   end
 
@@ -41,7 +41,11 @@ class Person
   def get_paid(amount)
     @bank_account += amount
     "all about the benjamins"
-    
+  end
+
+  def take_bath
+    self.hygiene += 4
+    "♪ Rub-a-dub just relaxing in the tub ♫"
   end
     
 end
