@@ -33,5 +33,15 @@ class Person
   def happy?
     happiness > 7
   end
+
+  def clean?
+    hygiene > 7
+  end
+
+  def get_paid(amount)
+    @bank_account += amount
+    "all about the benjamins"
+    
+  end
     
 end
