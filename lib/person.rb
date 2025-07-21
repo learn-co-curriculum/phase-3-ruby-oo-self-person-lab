@@ -29,5 +29,9 @@ class Person
       @hygiene  = hygiene 
      end
   end
+
+  def happy?
+    happiness > 7
+  end
     
 end
